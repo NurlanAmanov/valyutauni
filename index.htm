@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylee.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Valyuta</title>
+</head>
+
+<body>
+    <main>
+        <div class="exchange">
+            <div class="content">
+                <div class="exchange-main">
+                    <div class="head-text">
+                        <h1>Valyuta məzənnələri</h1>
+                    </div>
+                    <div class="deyisen">
+                        <a onclick="deyiscedvel1()"  href="#">Nağd</a>
+
+                        <a onclick="deyiscedvel2()" href="#">Nağdsız</a>
+                        <a onclick="deyiscedvel3()" href="#">Kart</a>
+                    </div>
+                    <div id="mobilecedvel" class="valyuta-table mobile">
+                        <table  id="cedvel1"  class="cedvel">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        Valyuta </th>
+                                    <th>
+                                        Alış </th>
+                                    <th>
+                                        Satış </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>USD</td>
+                                    <td>1.6975 <span
+                                            class="exchange__icon exchange__icon--orange icon icon--down exchange__icon--down"></span>
+                                    </td>
+                                    <td>1.7025 <span
+                                            class="exchange__icon exchange__icon--orange icon icon--down exchange__icon--down"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>EUR</td>
+                                    <td>1.8598 <span
+                                            class="exchange__icon exchange__icon--orange icon icon--down exchange__icon--down"></span>
+                                    </td>
+                                    <td>1.9088 <span
+                                            class="exchange__icon exchange__icon--orange icon icon--down exchange__icon--down"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>RUB</td>
+                                    <td>0.0161 <span
+                                            class="exchange__icon exchange__icon--orange icon icon--down exchange__icon--down"></span>
+                                    </td>
+                                    <td>0.0204 <span
+                                            class="exchange__icon exchange__icon--orange icon icon--down exchange__icon--down"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>GBP</td>
+                                    <td>2.2016 <span
+                                            class="exchange__icon exchange__icon--orange icon icon--down exchange__icon--down"></span>
+                                    </td>
+                                    <td>2.2787 <span
+                                            class="exchange__icon exchange__icon--orange icon icon--down exchange__icon--down"></span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="desktop-content">
+                        <div class="blok1">
+                            <div class="blok1-text">
+                                <a href="#">Nağd</a>
+                                <p>Yeniləndi 13.09.2024</p>
+                            </div>
+                            <table  class="cedvel">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            Valyuta </th>
+                                        <th>
+                                            Alış </th>
+                                        <th>
+                                            Satış </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>USD</td>
+                                        <td>1.6975 <span
+                                                class="exchange__icon exchange__icon--orange icon icon--down exchange__icon--down"></span>
+                                        </td>
+                                        <td>1.7025 <span
+                                                class="exchange__icon exchange__icon--orange icon icon--down exchange__icon--down"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>EUR</td>
+                                        <td>1.8598 <span
+                                                class="exchange__icon exchange__icon--orange icon icon--down exchange__icon--down"></span>
+                                        </td>
+                                        <td>1.9088 <span
+                                                class="exchange__icon exchange__icon--orange icon icon--down exchange__icon--down"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>RUB</td>
+                                        <td>0.0161 <span
+                                                class="exchange__icon exchange__icon--orange icon icon--down exchange__icon--down"></span>
+                                        </td>
+                                        <td>0.0204 <span
+                                                class="exchange__icon exchange__icon--orange icon icon--down exchange__icon--down"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>GBP</td>
+                                        <td>2.2016 <span
+                                                class="exchange__icon exchange__icon--orange icon icon--down exchange__icon--down"></span>
+                                        </td>
+                                        <td>2.2787 <span
+                                                class="exchange__icon exchange__icon--orange icon icon--down exchange__icon--down"></span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="blok1">
+                            <div class="blok1-text">
+                                <a href="#">Nağdsız</a>
+                                <p>Yeniləndi 13.09.2024</p>
+                            </div>
+                            <table class="cedvel">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            Valyuta </th>
+                                        <th>
+                                            Alış </th>
+                                        <th>
+                                            Satış </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>USD</td>
+                                        <td>1.6900 <span
+                                                class="exchange__icon exchange__icon--orange icon icon--down exchange__icon--down"></span>
+                                        </td>
+                                        <td>1.7025 <span
+                                                class="exchange__icon exchange__icon--orange icon icon--down exchange__icon--down"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>EUR</td>
+                                        <td>1.8560<span
+                                                class="exchange__icon exchange__icon--orange icon icon--down exchange__icon--down"></span>
+                                        </td>
+                                        <td>1.9144 <span
+                                                class="exchange__icon exchange__icon--orange icon icon--down exchange__icon--down"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>RUB</td>
+                                        <td>0.0166 <span
+                                                class="exchange__icon exchange__icon--orange icon icon--down exchange__icon--down"></span>
+                                        </td>
+                                        <td>0.0206 <span
+                                                class="exchange__icon exchange__icon--orange icon icon--down exchange__icon--down"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>GBP</td>
+                                        <td>2.2016 <span
+                                                class="exchange__icon exchange__icon--orange icon icon--down exchange__icon--down"></span>
+                                        </td>
+                                        <td>2.2686 <span
+                                                class="exchange__icon exchange__icon--orange icon icon--down exchange__icon--down"></span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="blok1">
+                            <div class="blok1-text">
+                                <a href="#">Kart</a>
+                                <p>Yeniləndi 13.09.2024</p>
+                            </div>
+                            <table class="cedvel">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            Valyuta </th>
+                                        <th>
+                                            Alış </th>
+                                        <th>
+                                            Satış </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>USD</td>
+                                        <td>1.6950 <span
+                                                class="exchange__icon exchange__icon--orange icon icon--down exchange__icon--down"></span>
+                                        </td>
+                                        <td>1.7150 <span
+                                                class="exchange__icon exchange__icon--orange icon icon--down exchange__icon--down"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>EUR</td>
+                                        <td>1.8600<span
+                                                class="exchange__icon exchange__icon--orange icon icon--down exchange__icon--down"></span>
+                                        </td>
+                                        <td>1.9100<span
+                                                class="exchange__icon exchange__icon--orange icon icon--down exchange__icon--down"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>RUB</td>
+                                        <td>0.0187<span
+                                                class="exchange__icon exchange__icon--orange icon icon--down exchange__icon--down"></span>
+                                        </td>
+                                        <td>0.0195<span
+                                                class="exchange__icon exchange__icon--orange icon icon--down exchange__icon--down"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>GBP</td>
+                                        <td>2.2100<span
+                                                class="exchange__icon exchange__icon--orange icon icon--down exchange__icon--down"></span>
+                                        </td>
+                                        <td>2.2530<span
+                                                class="exchange__icon exchange__icon--orange icon icon--down exchange__icon--down"></span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="valyuta-hesab">
+                    <div class="valutahesab-head">
+                        <h1>Valyuta kalkulyatoru</h1>
+                        <p>Nağd məzənnə əsasında hesablanır</p>
+                    </div>
+                    <div class="valyuta-hesab-main">
+                        <div class="inputs1">
+                            <input class="inputs" type="number" placeholder="0">
+                            <div onclick="opengo2()" class="country">
+                                <img src="img/usd.png" alt=""> <span class="money1">USD</span>
+                                <div id="moneyblokopen" style="display: none;" class="money-blok">
+                                    <span class="money"> <img src="img/euro.png" alt=""> EUR</span>
+                                    <span class="money"><img src="img/gbp.png" alt=""> GBP</span>
+                                    <span class="money"> <img src="img/rub.webp" alt=""> RUB</span>
+                                    <span class="money"><img src="img/azn.png" alt=""> AZN</span>
+                                </div>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-arrow-right-long desktop-arrow"></i>
+                        <div class="inputs1">
+                            <input class="inputs" type="number" placeholder="0">
+                            <div onclick="opengo()" class="country">
+                                <img src="img/usd.png" alt=""> <span class="money1">USD</span>
+                                <div id="moneyblokopen2" style="display: none;" class="money-blok top2">
+                                    <span class="money"> <img src="img/euro.png" alt=""> EUR</span>
+                                    <span class="money"><img src="img/gbp.png" alt=""> GBP</span>
+                                    <span class="money"> <img src="img/rub.webp" alt=""> RUB</span>
+                                    <span class="money"><img src="img/azn.png" alt=""> AZN</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+    <script src="js/app.js"></script>
+    <script src="js/data.js"></script>
+</body>
+
+</html>

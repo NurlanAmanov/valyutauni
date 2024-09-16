@@ -1,0 +1,325 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.mobile{
+    display: block!important;
+}
+.desktop-content{
+    display: none;
+}
+.desktop-arrow{
+    display: none;
+}
+.exchange{
+    padding: 25px;
+}
+.content {
+    width: 100%;
+    background: #FAFAFA;
+    height: auto;
+    border-radius: 10px;
+
+}
+.exchange-main {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.head-text{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.head-text h1{
+    color: #ff6400;
+    margin: 20px 0;
+    font-size: 25px;
+    font-weight: 800;
+}
+.deyisen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 80%;
+    margin: 5px;
+
+   
+    a{
+        display: flex;
+        width: 100%;
+        text-decoration: none;
+        border: 1px solid #a1a1a1;
+        color: #a1a1a1;
+        border-radius: 25px;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: 700;
+    }
+    
+}
+.deyisen a:active{
+    border:1px solid #ff6400;
+    color: #ff6400;
+}
+.valyuta-table{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+   margin: 20px;
+   gap: 10px;
+}
+.cedvel{
+ 
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.cedvel thead{
+
+    font-size: 14px;
+    line-height: 18px;
+    text-align: left;
+}
+.cedvel th{
+    border-bottom: 1px solid #d6d9db;
+    padding-bottom: 11px;
+    width: 33.3333333%;
+    font-size: 20px;
+    font-weight: 400 !important;
+}
+
+.cedvel tbody td{
+    width: 33.3333333%;
+    padding: 15px 0;
+    white-space: nowrap;
+    color: #323232;
+    font-weight: 700;
+}
+.valutahesab-head{
+    width: 90%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 10px;
+    h1{
+        font-weight: 700;
+        font-size: 25px;
+        color: #000;
+        padding-bottom: 10px;
+    }
+    p{
+        padding-bottom: 30px;
+        height: auto;
+        font-size: 18px;
+        line-height: 18px;
+    }
+}
+.valyuta-hesab-main{
+ width: 100%;
+ display: flex;
+ align-items: center;   
+ justify-content: center;
+ flex-direction: column;
+ gap: 10px;
+}
+.valyuta-hesab {
+    margin: auto;
+    box-shadow: 0 10px 25px -10px rgba(0, 0, 0, .1);
+    padding: 50px 30px;
+    border-radius: 10px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 25px;
+    width: 80%;
+}
+.inputs1 {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid rgba(50, 50, 50, .1);
+
+    
+}
+.inputs{
+border: none;
+    background: 0 0;
+outline: none;
+    font-weight: 700;
+    font-size: 15px;
+    color: #000;
+    line-height: 47px;
+    width: 70%;
+    text-align: center;
+}
+.country{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+    img{
+        width: 25px;
+        object-fit: cover;
+    }
+}
+.money1{
+    margin-top: 10px;
+}
+.money {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ margin-top: 20px;
+    font-size: 16px;
+    width: 85%;
+}
+.money-blok{
+    position: absolute;
+    top:40px;
+    left: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+width: 80px;
+    max-height: 200px;
+    box-shadow: 1px 10px 10px 0 #ebebeb;
+    overflow-y: auto;
+    background:white;
+    z-index: 99;
+    margin-bottom: 20px;
+}
+/* .top2 {
+    position: absolute;
+    top:55px;
+    left: 6px;
+} */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+@media screen  and (min-width:760px){
+    .exchange{
+        padding: 15px;
+    }
+    .content {
+        width: 80%;
+        margin: auto;
+        padding: 40px 70px;
+    background: #fafafa;
+    border-radius: 10px;
+    
+    }
+    .exchange-main {
+        padding: 40px;
+        width: 100%;
+    }
+    .exchange-main   h1{
+line-height: 28px;
+    font-weight: 800;
+    font-size: 28px;
+    color: #ff6400;
+    margin: 0 0 20px;
+    }
+    .deyisen,.mobile{
+        display: none!important;
+    }
+    .desktop-content{
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+       margin: 20px;
+       gap: 25px;
+        a{
+            text-decoration: none;
+
+     color: #000;
+    font-weight: 700;
+    font-size: 25px;
+    color: #000;
+    padding-bottom: 10px;
+        }
+    }
+    .blok1{
+        width: 100%;
+    }
+    .desktop-content .blok1{
+        padding: 15px;
+        gap: 25px;
+    }
+    .desktop-content .blok1 a{
+      margin: 20px 0;
+    }
+    .blok1 table{
+        margin: 20px 0;
+    }
+    .cedvel{
+        width: 100%;
+        border-collapse: collapse;
+        border-spacing: 0;
+        th,td{
+            font-size: 20px;
+            font-weight: 600;
+        }
+    }
+    p{
+        margin-top: 15px;
+    }
+    .cedvel thead{
+
+        font-size: 14px;
+        line-height: 18px;
+        text-align: left;
+    }
+    .cedvel th{
+        border-bottom: 1px solid #d6d9db;
+        padding-bottom: 11px;
+        width: 33.3333333%;
+        font-size: 20px;
+        font-weight: 400 !important;
+    }
+    .cedvel tbody td{
+        width: 33.3333333%;
+        padding: 15px 0;
+        white-space: nowrap;
+        color: #323232;
+        font-weight: 700;
+    }
+    .valyuta-hesab{
+        flex-direction: row;
+   
+    }
+    .valyuta-hesab-main{
+        flex-direction: row;
+    }
+    .desktop-arrow {
+        font-size: 28px;
+        color: #ff6400;
+        margin: 0 10px;
+    }
+}
