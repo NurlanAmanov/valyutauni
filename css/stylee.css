@@ -63,7 +63,7 @@
     }
     
 }
-.deyisen a:active{
+.deyisen a:focus{
     border:1px solid #ff6400;
     color: #ff6400;
 }
