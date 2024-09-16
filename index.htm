@@ -253,30 +253,58 @@
                     </div>
                     <div class="valyuta-hesab-main">
                         <div class="inputs1">
-                            <input class="inputs" type="number" placeholder="0">
-                            <div onclick="opengo2()" class="country">
-                                <img src="img/usd.png" alt=""> <span class="money1">USD</span>
-                                <div id="moneyblokopen" style="display: none;" class="money-blok">
-                                    <span class="money"> <img src="img/euro.png" alt=""> EUR</span>
-                                    <span class="money"><img src="img/gbp.png" alt=""> GBP</span>
-                                    <span class="money"> <img src="img/rub.webp" alt=""> RUB</span>
-                                    <span class="money"><img src="img/azn.png" alt=""> AZN</span>
-                                </div>
+                            <input id="input1" class="inputs" type="number" placeholder="0" oninput="calculateConversion()">
+                            <div onclick="toggleDropdown('moneyblokopen1')" class="country">
+                              <img id="selected-flag1" src="img/usd.png" alt="">
+                              <span id="selected-currency1" class="money1">USD</span>
+                              <div style="display: none;" id="moneyblokopen1" class="money-blok">
+                                <span class="money" onclick="selectCurrency('USD', 'img/usd.png', 'selected-flag1', 'selected-currency1')">
+                                  <img src="img/usd.png" alt=""> USD
+                                </span>
+                                <span class="money" onclick="selectCurrency('EUR', 'img/euro.png', 'selected-flag1', 'selected-currency1')">
+                                  <img src="img/euro.png" alt=""> EUR
+                                </span>
+                                <span class="money" onclick="selectCurrency('GBP', 'img/gbp.png', 'selected-flag1', 'selected-currency1')">
+                                  <img src="img/gbp.png" alt=""> GBP
+                                </span>
+                                <span class="money" onclick="selectCurrency('RUB', 'img/rub.webp', 'selected-flag1', 'selected-currency1')">
+                                  <img src="img/rub.webp" alt=""> RUB
+                                </span>
+                                <span class="money" onclick="selectCurrency('AZN', 'img/azn.png', 'selected-flag1', 'selected-currency1')">
+                                  <img src="img/azn.png" alt=""> AZN
+                                </span>
+                              </div>
                             </div>
-                        </div>
-                        <i class="fa-solid fa-arrow-right-long desktop-arrow"></i>
-                        <div class="inputs1">
-                            <input class="inputs" type="number" placeholder="0">
-                            <div onclick="opengo()" class="country">
-                                <img src="img/usd.png" alt=""> <span class="money1">USD</span>
-                                <div id="moneyblokopen2" style="display: none;" class="money-blok top2">
-                                    <span class="money"> <img src="img/euro.png" alt=""> EUR</span>
-                                    <span class="money"><img src="img/gbp.png" alt=""> GBP</span>
-                                    <span class="money"> <img src="img/rub.webp" alt=""> RUB</span>
-                                    <span class="money"><img src="img/azn.png" alt=""> AZN</span>
-                                </div>
+                          </div>
+                          
+                          <i class="fa-solid fa-arrow-right-long desktop-arrow"></i>
+                          
+                          <div class="inputs1">
+                            <input id="input2" class="inputs" type="number" placeholder="0" disabled>
+                            <div onclick="toggleDropdown('moneyblokopen2')" class="country">
+                              <img id="selected-flag2" src="img/usd.png" alt="">
+                              <span id="selected-currency2" class="money1">USD</span>
+                              <div style="display: none;" id="moneyblokopen2" class="money-blok top2">
+                                <span class="money" onclick="selectCurrency('USD', 'img/usd.png', 'selected-flag2', 'selected-currency2')">
+                                  <img src="img/usd.png" alt=""> USD
+                                </span>
+                                <span class="money" onclick="selectCurrency('EUR', 'img/euro.png', 'selected-flag2', 'selected-currency2')">
+                                  <img src="img/euro.png" alt=""> EUR
+                                </span>
+                                <span class="money" onclick="selectCurrency('GBP', 'img/gbp.png', 'selected-flag2', 'selected-currency2')">
+                                  <img src="img/gbp.png" alt=""> GBP
+                                </span>
+                                <span class="money" onclick="selectCurrency('RUB', 'img/rub.webp', 'selected-flag2', 'selected-currency2')">
+                                  <img src="img/rub.webp" alt=""> RUB
+                                </span>
+                                <span class="money" onclick="selectCurrency('AZN', 'img/azn.png', 'selected-flag2', 'selected-currency2')">
+                                  <img src="img/azn.png" alt=""> AZN
+                                </span>
+                              </div>
                             </div>
-                        </div>
+                          </div>
+                                                  
+                        
                     </div>
                 </div>
             </div>
@@ -284,7 +312,7 @@
         </div>
     </main>
     <script src="js/app.js"></script>
-    <script src="js/data.js"></script>
+  
 </body>
 
 </html>
