@@ -1,4 +1,6 @@
 
+  
+  
 const mobilecedvel=document.getElementById('mobilecedvel')
 const sifirla=document.getElementById('sifirla')
 const cedvel1=document.getElementById('cedvel1')
@@ -136,21 +138,48 @@ function deyiscedvel3() {
             </tbody>
         </table>`;
 }
-
-function opengo2 (){
-    const moneyblokopen=document.getElementById('moneyblokopen')
-if(moneyblokopen.style.display==="none"|| moneyblokopen.style.display===""){
-    moneyblokopen.style.display="block"
-}else{
-    moneyblokopen.style.display="none"  
-}
-}
-function opengo (){
-    const moneyblokopen2=document.getElementById('moneyblokopen2')
-if(moneyblokopen2.style.display==="none"|| moneyblokopen2.style.display===""){
-    moneyblokopen2.style.display="block"
-}else{
-    moneyblokopen2.style.display="none"  
-}
-}
-
+let data = {
+    Valute: [
+      { "Nominal": "1", "Name": "1 ABŞ dolları", "Value": "1.7", "_Code": "USD" },
+      { "Nominal": "1", "Name": "1 Avro", "Value": "1.8843", "_Code": "EUR" },
+      { "Nominal": "1", "Name": "1 İngiltərə funt sterlinqi", "Value": "2.2351", "_Code": "GBP" },
+      { "Nominal": "1", "Name": "1 Rusiya rublu", "Value": "0.0191", "_Code": "RUB" },
+      { "Nominal": "1", "Name": "1 Azərbaycan manatı", "Value": "1.0", "_Code": "AZN" }
+    ]
+  };
+  
+  let selectedCurrency1 = "USD";
+  let selectedCurrency2 = "USD";
+  
+  function selectCurrency(currency, imgSrc, flagId, currencyId) {
+    document.getElementById(flagId).src = imgSrc;
+    document.getElementById(currencyId).textContent = currency;
+    
+    if (flagId === "selected-flag1") {
+      selectedCurrency1 = currency;
+    } else {
+      selectedCurrency2 = currency;
+    }
+  
+    calculateConversion();
+  }
+  
+  function toggleDropdown(id) {
+    const dropdown = document.getElementById(id);
+    dropdown.style.display = dropdown.style.display === "none" ? "block" : "none";
+  }
+  
+  function calculateConversion() {
+    const input1Value = parseFloat(document.getElementById("input1").value) || 0;
+    
+    const currency1 = data.Valute.find(val => val._Code === selectedCurrency1);
+    const currency2 = data.Valute.find(val => val._Code === selectedCurrency2);
+    
+    if (currency1 && currency2) {
+      const conversionRate = currency1.Value / currency2.Value;
+      const convertedValue = (input1Value * conversionRate)-0.02;
+      
+      document.getElementById("input2").value = convertedValue.toFixed(2);
+    }
+  }
+  
